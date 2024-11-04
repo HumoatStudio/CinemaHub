@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка Видео</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Загрузка видео</h2>
+    <form id="upload-form">
+        <label for="video-file">Выберите видео:</label>
+        <input type="file" id="video-file" accept="video/*">
+        <label for="video-title">Название видео:</label>
+        <input type="text" id="video-title">
+        <label for="video-description">Описание:</label>
+        <textarea id="video-description"></textarea>
+        <button type="submit">Загрузить</button>
+    </form>
+</body>
+<script>
+    document.getElementById("upload-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Видео загружено успешно!");
+    });
+</script>
+</html>

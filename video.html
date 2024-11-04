@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр Видео</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-container">
+        <div class="video-container">
+        <video controls autoplay poster="Как создать игру на телефоне {Разбор UI (Часть 1)}.jpg">
+            <source src="Как создать игру на телефоне {Разбор UI (Часть 1)}.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+    </div>
+    <div class="video-info">
+        <h2 id="video-title">Название Видео</h2>
+        <p class="views" id="video-views">Просмотров: </p>
+        <div class="actions">
+            <button>👍 Лайк</button>
+            <button>👎 Дизлайк</button>
+        </div>
+        <p class="description" id="video-description">Описание видео...</p>
+    </div>
+    <script src="videoScript.js"></script>
+</body>
+</html>
